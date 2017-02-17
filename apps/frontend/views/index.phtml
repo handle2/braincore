@@ -30,14 +30,38 @@
     <![endif]-->
 
 </head>
-<body class="hold-transition skin-yellow sidebar-mini" data-ng-controller="CommonController as ctrl">
-<div class="wrapper">
-        <!-- Main content -->
-        <section class="content">
+<body data-ng-controller="CommonController as ctrl">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <div data-ng-init="ctrl.getContents(['menu'])"></div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a data-ng-href="/login">Login</a></li>
+                    <li><a data-ng-href="/">Home</a></li>
+                    <li data-ng-repeat="content in ctrl.contents"><a data-ng-href="/{{content.type}}/{{content.url}}">{{content.name}}</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+<br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="container">
+        <div class="starter-template">
             <div data-ng-view></div>
-        </section><!-- /.content -->
-
-</div><!-- ./wrapper -->
+        </div>
+    </div><!-- /.content -->
 
 <!-- REQUIRED JS SCRIPTS -->
 <!-- jQuery 2.1.4 -->

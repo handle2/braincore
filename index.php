@@ -29,6 +29,7 @@ try {
         $router = new \Phalcon\Mvc\Router(false);
         include 'apps/frontend/config/routes.php';
         include 'modules/Admin/config/routes.php';
+        
         return $router;
 
     };

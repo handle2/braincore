@@ -18,4 +18,18 @@ $frontend->addGet('/:controller/:action/:params', array(
         'params'        =>3
     )
 );
+
+$frontend->addGet('/:controller/:action', array(
+        'controller'    => 'index',
+        'action'        => 'index',
+    )
+);
+
+$frontend->addPost('/:controller/:action/:params', array(
+        'controller'    => 1,
+        'action'        => 2,
+        'params'        =>3
+    )
+);
+
 $router->mount($frontend);

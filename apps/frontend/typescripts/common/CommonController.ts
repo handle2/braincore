@@ -8,6 +8,8 @@ module frontApp {
     class CommonController implements ICommonController{
 
 
+        public contents = [];
+
         constructor(private root , private scope, private window, private location, public commonService,public translate, private localStorageService) {
 
             if(!localStorageService.get('lang')){
@@ -41,6 +43,13 @@ module frontApp {
 
         private setLangSession(code){
             this.commonService.http.post('/admin/language/setLang',angular.toJson(code));
+        }
+
+        public getContents(labels:Array<string>){
+            var self = this;
+            this.commonService.http.post('/content/list',angular.toJson(labels)).then(function (response) {
+                self.contents = angular.fromJson(response.data);
+            });
         }
 
     }

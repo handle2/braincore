@@ -12,4 +12,15 @@ class ControllerBase extends Controller
     {
         
     }
+
+    protected function api($code, $data)
+    {
+
+        $this->response->setStatusCode($code);
+        $this->response->setContentType("application/json; charset=UTF-8");
+        $this->response->setContent(json_encode($data));
+
+        return $this->response;
+
+    }
 }

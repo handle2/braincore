@@ -73,6 +73,24 @@ module frontApp{
         $routeProvider.when("/", {
             templateUrl : '/apps/frontend/views/directives/routes/index/index.html'
         })
+        .when("/login", {
+            templateUrl : '/apps/frontend/views/directives/routes/login/login.html'
+        })
+        .when("/register", {
+            templateUrl : '/apps/frontend/views/directives/routes/login/register.html'
+        })
+        .when("/content/:url", {
+            templateUrl : '/apps/frontend/views/directives/routes/content/content.html',
+            controller : 'ContentController',
+            controllerAs: 'ctrl',
+            resolve:	{
+                content:	["$route","$http", function(route,http) {
+                    return http.get('/content/get/'+route.current.params.url).then(function successCallback(response) {
+                        return angular.fromJson(response.data);
+                    });
+                }],
+            }
+        })
 
     });
 

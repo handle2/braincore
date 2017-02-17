@@ -7,3 +7,5 @@
 /frontend-scripts.js
 /.idea
 /modules
+/apps/frontend/typescripts/**/*.js
+/apps/frontend/typescripts/**/*.js.map

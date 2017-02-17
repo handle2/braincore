@@ -1,0 +1,22 @@
+<section id="slider">
+    <div id="home-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <?php foreach ($menu as $key => $m):?>
+            <div class="item <?=$key==0?'active':''?>" style="background-image: url(<?=$m->getPictures()?$m->getPictures()[0]->getUrl():''?>)">
+                <div class="carousel-caption container">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h1><?=$m->title?></h1>
+                            <h2><?=$m->short?></h2>
+                            <p><?=$m->lead?></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach;?>
+            <a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+            <a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+        </div>
+    </div> <!--/#home-carousel-->
+</section>
+<!-- /SLIDER -->

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html data-ng-app="frontApp" lang="{{ $root.language }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Front oldal</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="/apps/frontend/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/apps/frontend/public/css/bootstrap-switch.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css">
+    <link rel="stylesheet" href="/node_modules/angular-ui-switch/angular-ui-switch.min.css">
+    <link rel="stylesheet" href="/modules/Admin/node_modules/angular-loading-bar/src/loading-bar.css" type='text/css' media='all' >
+
+    <link rel="stylesheet" href="/modules/Admin/node_modules/ng-datepicker/src/css/ngDatepicker.css">
+
+    <!---->
+    <link rel="stylesheet" href="/modules/Admin/bower_components/ng-img-crop/compile/minified/ng-img-crop.css">
+    <!---->
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="hold-transition skin-yellow sidebar-mini" data-ng-controller="CommonController as ctrl">
+<div class="wrapper">
+        <!-- Main content -->
+        <section class="content">
+            <div data-ng-view></div>
+        </section><!-- /.content -->
+
+</div><!-- ./wrapper -->
+
+<!-- REQUIRED JS SCRIPTS -->
+<!-- jQuery 2.1.4 -->
+<script src="/apps/frontend/public/js/jQuery-2.1.4.min.js"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="/apps/frontend/public/js/bootstrap-switch.js"></script>
+<script src="/apps/frontend/public/js/bootstrap.min.js"></script>
+
+<script src="/modules/Admin/bower_components/angular/angular.js"></script>
+<script src="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+<script src="/modules/Admin/bower_components/angular-route/angular-route.js"></script>
+<script src="/modules/Admin/bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+<script src="/modules/Admin/bower_components/angular-translate/angular-translate.js"></script>
+<script src="/modules/Admin/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+<!-- ANGULAR IMAGE CROPPER -->
+<script src="/modules/Admin/bower_components/ng-img-crop/compile/minified/ng-img-crop.js"></script>
+<script src="/modules/Admin/bower_components/angular-img-cropper/dist/angular-img-cropper.min.js"></script>
+<!-- ANGULAR IMAGE CROPPER END -->
+<script src="/modules/Admin/node_modules/angular-loading-bar/src/loading-bar.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="/modules/Admin/node_modules/ng-datepicker/src/js/ngDatepicker.min.js"></script>
+<script src="/modules/Admin/bower_components/angular-smart-table/dist/smart-table.min.js"></script>
+<script src="/node_modules/angular-ui-switch/angular-ui-switch.min.js"></script>
+<script src="/modules/Admin/bower_components/angular-modal-service/dst/angular-modal-service.min.js"></script>
+<script src="/frontend-scripts.js"></script>
+</body>
+</html>

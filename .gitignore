@@ -1,2 +1,9 @@
 /cache/
 /config/development/
+/bower_components/
+/node_modules/
+/dist/
+/typings/
+/frontend-scripts.js
+/.idea
+/modules

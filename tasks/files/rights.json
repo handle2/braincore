@@ -1,0 +1,556 @@
+{
+  "rights":[
+
+    {
+      "name" : "Jogok",
+      "code" : "rights",
+      "type" : "group",
+      "parent" : null,
+      "actions" : []
+    },
+
+
+    {
+      "name" : "Felhasználói",
+      "code" : "rights.user",
+      "type" : "subRight",
+      "parent" : "rights",
+      "actions" : [
+        {
+          "controller" : "right",
+          "action" : "list"
+        },
+        {
+          "controller" : "right",
+          "action" : "getSub"
+        }
+      ]
+    },
+
+    {
+      "name" : "Jogosultság megtekintés",
+      "code" : "rights.user.edit",
+      "type" : "subRight",
+      "parent" : "rights",
+      "actions" : [
+        {
+          "controller" : "right",
+          "action" : "get"
+        }
+      ]
+    },
+
+    {
+      "name" : "Jogosultság módosítás",
+      "code" : "rights.user.save",
+      "type" : "subRight",
+      "parent" : "rights",
+      "actions" : [
+        {
+          "controller" : "right",
+          "action" : "save"
+        }
+      ]
+    },
+
+    {
+      "name" : "Jogosultság törlés",
+      "code" : "rights.user.delete",
+      "type" : "subRight",
+      "parent" : "rights",
+      "actions" : [
+        {
+          "controller" : "right",
+          "action" : "delete"
+        }
+      ]
+    },
+
+
+    {
+      "name" : "Szerepkörök",
+      "code" : "rights.roles",
+      "type" : "subRight",
+      "parent" : "rights",
+      "actions" : [
+        {
+          "controller" : "role",
+          "action" : "list"
+        }
+      ]
+    },
+
+    {
+      "name" : "Szerepkör megtekintés",
+      "code" : "rights.roles.edit",
+      "type" : "subRight",
+      "parent" : "rights",
+      "actions" : [
+        {
+          "controller" : "role",
+          "action" : "get"
+        }
+      ]
+    },
+
+    {
+      "name" : "Szerepkör módosítás",
+      "code" : "rights.roles.save",
+      "type" : "subRight",
+      "parent" : "rights",
+      "actions" : [
+        {
+          "controller" : "role",
+          "action" : "save"
+        }
+      ]
+    },
+
+    {
+      "name" : "Szerepkör törlés",
+      "code" : "rights.roles.delete",
+      "type" : "subRight",
+      "parent" : "rights",
+      "actions" : [
+        {
+          "controller" : "role",
+          "action" : "delete"
+        }
+      ]
+    },
+
+
+    {
+      "name" : "Tartalmak",
+      "code" : "cms",
+      "type" : "group",
+      "parent" : null,
+      "actions" : []
+    },
+
+    {
+      "name" : "Tartalom",
+      "code" : "cms.content",
+      "type" : "subRight",
+      "parent" : "cms",
+      "actions" : [
+        {
+          "controller" : "content",
+          "action" : "list"
+        }
+      ]
+    },
+
+    {
+      "name" : "Tartalom megtekintés",
+      "code" : "cms.content.edit",
+      "type" : "subRight",
+      "parent" : "cms",
+      "actions" : [
+        {
+          "controller" : "content",
+          "action" : "get"
+        }
+      ]
+    },
+
+    {
+      "name" : "Tartalom módosítás",
+      "code" : "cms.content.upload",
+      "type" : "subRight",
+      "parent" : "cms",
+      "actions" : [
+        {
+          "controller" : "content",
+          "action" : "save"
+        }
+      ]
+    },
+
+    {
+      "name" : "Tartalom törlése",
+      "code" : "cms.content.delete",
+      "type" : "subRight",
+      "parent" : "cms",
+      "actions" : [
+        {
+          "controller" : "content",
+          "action" : "delete"
+        }
+      ]
+    },
+
+
+    {
+      "name" : "Címkék",
+      "code" : "cms.labels",
+      "type" : "subRight",
+      "parent" : "cms",
+      "actions" : [
+        {
+          "controller" : "label",
+          "action" : "list"
+        }
+      ]
+    },
+
+    {
+      "name" : "Címke megtekintés",
+      "code" : "cms.labels.edit",
+      "type" : "subRight",
+      "parent" : "cms",
+      "actions" : [
+        {
+          "controller" : "label",
+          "action" : "get"
+        }
+      ]
+    },
+
+    {
+      "name" : "Címke feltöltés",
+      "code" : "cms.labels.upload",
+      "type" : "subRight",
+      "parent" : "cms",
+      "actions" : [
+        {
+          "controller" : "label",
+          "action" : "save"
+        }
+      ]
+    },
+
+    {
+      "name" : "Címke törlés",
+      "code" : "cms.labels.delete",
+      "type" : "subRight",
+      "parent" : "cms",
+      "actions" : [
+        {
+          "controller" : "label",
+          "action" : "delete"
+        }
+      ]
+    },
+
+
+    {
+      "name" : "Partner",
+      "code" : "partner",
+      "type" : "group",
+      "parent" : null,
+      "actions" : []
+    },
+
+    {
+      "name" : "Partner megtekintés",
+      "code" : "partner.edit",
+      "type" : "subRight",
+      "parent" : "partner",
+      "actions" : [
+        {
+          "controller" : "partner",
+          "action" : "edit"
+        }
+      ]
+    },
+
+    {
+      "name" : "Partner törlés",
+      "code" : "partner.delete",
+      "type" : "subRight",
+      "parent" : "partner",
+      "actions" : [
+        {
+          "controller" : "partner",
+          "action" : "delete"
+        }
+      ]
+    },
+
+    {
+      "name" : "Partner törlés",
+      "code" : "partner.upload",
+      "type" : "subRight",
+      "parent" : "partner",
+      "actions" : [
+        {
+          "controller" : "partner",
+          "action" : "save"
+        }
+      ]
+    },
+
+    {
+      "name" : "Partner jelszó módosítás",
+      "code" : "partner.password",
+      "type" : "subRight",
+      "parent" : "partner",
+      "actions" : [
+        {
+          "controller" : "partner",
+          "action" : "sendPassword"
+        }
+      ]
+    },
+
+    {
+      "name" : "Címke törlés",
+      "code" : "cms.labels.delete",
+      "type" : "subRight",
+      "parent" : "cms",
+      "actions" : [
+        {
+          "controller" : "label",
+          "action" : "delete"
+        }
+      ]
+    },
+
+
+    {
+      "name" : "Termékek",
+      "code" : "product",
+      "type" : "group",
+      "parent" : null,
+      "actions" : [{"controller":"product","action":"list"}]
+    },
+
+    {
+      "name" : "Termék megtekintés",
+      "code" : "product.edit",
+      "type" : "subRight",
+      "parent" : "product",
+      "actions" : [
+        {
+          "controller" : "product",
+          "action" : "get"
+        }
+      ]
+    },
+
+    {
+      "name" : "Termék módosítás",
+      "code" : "product.upload",
+      "type" : "subRight",
+      "parent" : "product",
+      "actions" : [
+        {
+          "controller" : "product",
+          "action" : "save"
+        }
+      ]
+    },
+
+    {
+      "name" : "Termék törlés",
+      "code" : "product.delete",
+      "type" : "subRight",
+      "parent" : "product",
+      "actions" : [
+        {
+          "controller" : "product",
+          "action" : "delete"
+        }
+      ]
+    },
+
+
+    {
+      "name" : "Kategóriák",
+      "code" : "product.category",
+      "type" : "subRight",
+      "parent" : "product",
+      "actions" : [
+        {
+          "controller" : "prodcateg",
+          "action" : "list"
+        }
+      ]
+    },
+
+    {
+      "name" : "Kategória megtekintés",
+      "code" : "product.category.edit",
+      "type" : "subRight",
+      "parent" : "product",
+      "actions" : [
+        {
+          "controller" : "prodcateg",
+          "action" : "get"
+        }
+      ]
+    },
+
+    {
+      "name" : "Kategória feltöltés",
+      "code" : "product.category.upload",
+      "type" : "subRight",
+      "parent" : "product",
+      "actions" : [
+        {
+          "controller" : "prodcateg",
+          "action" : "save"
+        }
+      ]
+    },
+
+    {
+      "name" : "Kategória törlés",
+      "code" : "product.category.delete",
+      "type" : "subRight",
+      "parent" : "product",
+      "actions" : [
+        {
+          "controller" : "prodcateg",
+          "action" : "delete"
+        }
+      ]
+    },
+
+
+    {
+      "name" : "Kedvezmények",
+      "code" : "product.discount",
+      "type" : "subRight",
+      "parent" : "product",
+      "actions" : [
+        {
+          "controller" : "discount",
+          "action" : "list"
+        }
+      ]
+    },
+
+    {
+      "name" : "Kedvezmény megtekintés",
+      "code" : "product.discount.edit",
+      "type" : "subRight",
+      "parent" : "product",
+      "actions" : [
+        {
+          "controller" : "discount",
+          "action" : "get"
+        }
+      ]
+    },
+
+    {
+      "name" : "Kedvezmény feltöltés",
+      "code" : "product.discount.upload",
+      "type" : "subRight",
+      "parent" : "product",
+      "actions" : [
+        {
+          "controller" : "discount",
+          "action" : "save"
+        }
+      ]
+    },
+
+    {
+      "name" : "Kedvezmény törlés",
+      "code" : "product.discount.delete",
+      "type" : "subRight",
+      "parent" : "product",
+      "actions" : [
+        {
+          "controller" : "discount",
+          "action" : "delete"
+        }
+      ]
+    },
+
+
+    {
+      "name" : "Storage",
+      "code" : "storage",
+      "type" : "group",
+      "parent" : null,
+      "actions" : []
+    },
+
+    {
+      "name" : "Storage megtekintés",
+      "code" : "storage.edit",
+      "type" : "subRight",
+      "parent" : "storage",
+      "actions" : [
+        {
+          "controller" : "storage",
+          "action" : "get"
+        }
+      ]
+    },
+
+    {
+      "name" : "Storage feltöltés",
+      "code" : "storage.upload",
+      "type" : "subRight",
+      "parent" : "storage",
+      "actions" : [
+        {
+          "controller" : "storage",
+          "action" : "save"
+        }
+      ]
+    },
+
+    {
+      "name" : "Storage törlés",
+      "code" : "storage.delete",
+      "type" : "subRight",
+      "parent" : "storage",
+      "actions" : [
+        {
+          "controller" : "storage",
+          "action" : "delete"
+        }
+      ]
+    },
+
+    {
+      "name" : "Languages",
+      "code" : "language",
+      "type" : "group",
+      "parent" : null,
+      "actions" : []
+    },
+    {
+      "name" : "Nyelv mentése",
+      "code" : "language.upload",
+      "type" : "subRight",
+      "parent" : "language",
+      "actions" : [
+        {
+          "controller" : "language",
+          "action" : "save"
+        }
+      ]
+    },
+    {
+      "name" : "Nyelv feltöltés",
+      "code" : "language.edit",
+      "type" : "subRight",
+      "parent" : "language",
+      "actions" : [
+        {
+          "controller" : "language",
+          "action" : "get"
+        }
+      ]
+    },
+    {
+      "name" : "Nyelv törlés",
+      "code" : "language.delete",
+      "type" : "subRight",
+      "parent" : "language",
+      "actions" : [
+        {
+          "controller" : "language",
+          "action" : "delete"
+        }
+      ]
+    }
+  ]
+}

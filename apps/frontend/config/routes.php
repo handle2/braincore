@@ -19,7 +19,12 @@ $frontend->addGet('/:controller/:action/:params', array(
     )
 );
 
-$frontend->addGet('/:controller/:action', array(
+$frontend->addGet('/:controller/:action?', array(
+        'controller'    => 'index',
+        'action'        => 'index',
+    )
+);
+$frontend->addGet('/:controller', array(
         'controller'    => 'index',
         'action'        => 'index',
     )

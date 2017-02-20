@@ -6,6 +6,11 @@ use Modules\BusinessLogic\Search\SeqSearch;
 class DatabaseTask extends TaskBase
 {
 
+    public function mainAction(){
+        echo "database generate".PHP_EOL;
+        echo "database reset".PHP_EOL;
+    }
+
     /**
      * Kiolvassa a rights.json-ból az adatokat és feltölti az adatbázisba
      */
@@ -102,6 +107,11 @@ class DatabaseTask extends TaskBase
      * legenerálja a jogosultságokat
      */
     public function generateAction() {
+        $this->createRights();
+        $this->createRoles();
+    }
+
+    public function resetAction() {
         $this->createRights();
         $this->createRoles();
     }

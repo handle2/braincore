@@ -91,6 +91,18 @@ module frontApp{
                 }],
             }
         })
+        .when("/list/:url", {
+            templateUrl : '/apps/frontend/views/directives/routes/content/list.html',
+            controller : 'ContentController',
+            controllerAs: 'ctrl',
+            resolve:	{
+                content:	["$route","$http", function(route,http) {
+                    return http.get('/content/get/'+route.current.params.url).then(function successCallback(response) {
+                        return angular.fromJson(response.data);
+                    });
+                }],
+            }
+        })
 
     });
 

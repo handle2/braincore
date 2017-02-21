@@ -18,13 +18,13 @@ class ContentController extends ControllerBase
         $search = ContentSearch::createContentSearch();
         $search->labels = $labels;
         $contents = $search->find();
-        return $this->api(200,json_encode($contents));
+        return $this->api(200,$contents);
     }
 
     public function getAction($url){
         $search = ContentSearch::createContentSearch();
         $search->url = $url;
         $content = $search->findFirst();
-        return $this->api(200,json_encode($content));
+        return $this->api(200,$content);
     }
 }

@@ -48,7 +48,7 @@ module frontApp {
         public getContents(labels:Array<string>){
             var self = this;
             this.commonService.http.post('/content/list',angular.toJson(labels)).then(function (response) {
-                self.contents = angular.fromJson(response.data);
+                self.contents = response.data;
             });
         }
 

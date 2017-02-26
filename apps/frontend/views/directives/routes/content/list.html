@@ -1,1 +1,66 @@
-{{ctrl.content}}
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">One Column Portfolio
+                <small>Subheading</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li class="active">One Column Portfolio</li>
+            </ol>
+        </div>
+    </div>
+
+    <div data-ng-repeat="child in ctrl.content.children">
+        <div class="row">
+            <div class="col-md-7">
+                <a data-ng-href="/{{child.type}}/{{child.url}}">
+                    <img class="img-responsive img-hover" src="{{child.pictures[0]}}" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>{{child.name}}</h3>
+                <!-- <h4>Subheading</h4> majd lesz-->
+                <p>{{child.lead}}</p>
+                <a class="btn btn-primary" data-ng-href="/{{child.type}}/{{child.url}}">{{'i_look'|translate}}</i></a>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <!-- Pagination -->
+    <div class="row text-center">
+        <div class="col-lg-12">
+            <ul class="pagination">
+                <li>
+                    <a href="#">&laquo;</a>
+                </li>
+                <li class="active">
+                    <a href="#">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#">4</a>
+                </li>
+                <li>
+                    <a href="#">5</a>
+                </li>
+                <li>
+                    <a href="#">&raquo;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <hr>
+
+</div>

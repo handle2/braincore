@@ -31,7 +31,7 @@ module frontApp{
         $translateProvider.useSanitizeValueStrategy('escapeParameters');
 
         $translateProvider.useStaticFilesLoader({
-            prefix: '/modules/Admin/lang/',
+            prefix: '/apps/frontend/lang/',
             suffix: '.json'
         });
 
@@ -86,7 +86,7 @@ module frontApp{
             resolve:	{
                 content:	["$route","$http", function(route,http) {
                     return http.get('/content/get/'+route.current.params.url).then(function successCallback(response) {
-                        return angular.fromJson(response.data);
+                        return response.data;
                     });
                 }],
             }
@@ -98,7 +98,7 @@ module frontApp{
             resolve:	{
                 content:	["$route","$http", function(route,http) {
                     return http.get('/content/get/'+route.current.params.url).then(function successCallback(response) {
-                        return angular.fromJson(response.data);
+                        return response.data;
                     });
                 }],
             }

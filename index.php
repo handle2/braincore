@@ -67,6 +67,10 @@ try {
 
     $di->set('redis',$client);
 
+    $di->set('resolutions',function (){
+        return include 'apps/frontend/config/application.php';
+    });
+
 
     /**
      * Handle the request

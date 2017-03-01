@@ -25,9 +25,10 @@ class ContentController extends ControllerBase
     public function getAction($url){
         $search = ContentSearch::createContentSearch();
         $search->url = $url;
+        $search->imageSize = "front-image";
         /** @var Content $content */
         $content = $search->findFirst();
-        $children = $content->getChildren();
+        $children = $content->getChildren("list");
         if($children){
             $content->children = $children;
         }

@@ -24,6 +24,7 @@ class Module
             'Modules\BusinessLogic\Frontend' => 'modules/BusinessLogic/Frontend/',
             'Modules\BusinessLogic\ContentSettings' => 'modules/BusinessLogic/ContentSettings/',
             'Modules\BusinessLogic\Search' => 'modules/BusinessLogic/Searches/',
+            'Modules\BusinessLogic\Operations' => 'modules/BusinessLogic/Operations/',
         ));
 
         $loader->register();

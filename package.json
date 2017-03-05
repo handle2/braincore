@@ -5,11 +5,13 @@
   "main": "app.js",
   "dependencies": {
     "angular": "^1.5.8",
+    "angular-moment": "^1.0.1",
     "angular-ui-bootstrap": "^2.3.0",
     "angular-ui-switch": "^0.1.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-typescript": "^3.0.2",
+    "moment": "^2.17.1",
     "tsd": "^0.6.5",
     "typescript": "^2.0.3"
   },
